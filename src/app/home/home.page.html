@@ -1,0 +1,58 @@
+
+  <ion-content padding >
+    <ion-grid>
+
+      <ion-row>
+
+        <ion-col size="12">
+
+          <ion-img  src="/assets/painel.jpg"></ion-img>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col size="12">
+
+         <h4 class="ion-text-center"><strong>Saiba qual melhor opção para abastercer seu carro!</strong></h4>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+<br/>
+        <ion-col size="12">
+
+          <ion-item >
+            <ion-label position="stacked"> Preço Álcool, ex: 3,79</ion-label>
+            <ion-input type="number" [(ngModel)]="alcool"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked"> Preço Gasolina, ex: 5,49</ion-label>
+            <ion-input type="number" [(ngModel)]="gasolina"></ion-input>
+          </ion-item>
+<br/>
+          <ion-button expand="full" (click)="calcular()">Calcular</ion-button>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col size="12">
+
+         <h4 class="ion-text-center"><strong>{{ resultado }}</strong></h4>
+
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid> 
+
+  </ion-content>
+
